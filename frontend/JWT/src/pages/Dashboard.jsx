@@ -22,7 +22,7 @@ const Dashboard = () => {
     <div style={styles.container}>
       <div style={styles.overlay}>
         <div style={styles.card}>
-          <h1>🌄 Welcome to Smart Sensor</h1>
+          <h1>🌄 Welcome to Smart Sensor, Robotics dept. at CDAC</h1>
           <p>Monitoring Nature with Technology</p>
 
           <button onClick={handleLogout} style={styles.button}>

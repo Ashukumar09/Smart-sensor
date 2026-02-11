@@ -8,8 +8,20 @@ connectDB();
 
 const app = express();
 
+// CORS Options
+const corsOptions = {
+  origin: [
+    "https://smart-sensor.vercel.app",   // your current domain
+    "http://localhost:5173",             // Vite local
+    "http://localhost:3000"              // React local
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
